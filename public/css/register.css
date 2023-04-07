@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+* {
+    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2210775-jpeg.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  overflow-x: hidden
+}
+
+body.swal2-shown.swal2-height-auto{
+  height: 100vh !important;
+  padding-right: 0px !important;
+}
+
+
+
+.contact-us {
+  background: #f8f4e5;
+  padding: 50px 100px;
+  border: 2px solid black;
+  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
+ 
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 14pt;
+  line-height: 28pt;
+  font-family: "Fjalla One";
+  margin-bottom: 28pt;
+  border: none;
+  border-bottom: 5px solid black;
+  background: #f8f4e5;
+  min-width: 360px;
+  padding-left: 5px;
+  outline: none;
+  color: black;
+}
+
+input:focus {
+  border-bottom: 5px solid #ffa580;
+}
+
+button {
+    justify-content: space-between;
+  display: block;
+  margin: 50px auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ffa580;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 2px black;
+}
+button:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+::selection {
+  background: #ffc8ff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border-bottom: 5px solid #95a4ff;
+  -webkit-text-fill-color: #2A293E;
+  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+/* .check-b{
+    background: black;
+  } */
+  body h5 {
+    text-align: center;
+    color: gray;
+  }
+  body h2 {
+    text-align:  center;
+    color: gray;
+  }
+  .inactiveMixin {
+    content: "";
+    position: absolute;
+    display: block;
+  }
+  .beforeAnimation {
+    -moz-transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
+    -o-transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
+    -webkit-transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
+    transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
+  }
+  .afterAnimation {
+    box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 0px 0 hsla(0, 0%, 0%, 0.04), 0 4px 9px hsla(0, 0%, 0%, 0.13), 0 3px 3px hsla(0, 0%, 0%, 0.05);
+    -moz-transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+    -o-transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+    -webkit-transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+    transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+  }
+  .toggleWrapper {
+    margin: auto;
+    
+    width: 55px;
+    
+    border-radius: 5px;
+    
+  }
+  .toggleWrapper input.mobileToggle {
+    opacity: 0;
+    position: absolute;
+  }
+  .toggleWrapper input.mobileToggle + label {
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    -moz-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    -webkit-tap-highlight-color: transparent;
+    height: 30px;
+    width: 50px;
+    border: 1px solid #e4e4e4;
+    border-radius: 60px;
+  }
+  .toggleWrapper input.mobileToggle + label:before {
+    content: "";
+    position: absolute;
+    display: block;
+    -moz-transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
+    -o-transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
+    -webkit-transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
+    transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
+    height: 30px;
+    width: 51px;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+  }
+  .toggleWrapper input.mobileToggle + label:after {
+    content: "";
+    position: absolute;
+    display: block;
+    box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 0px 0 hsla(0, 0%, 0%, 0.04), 0 4px 9px hsla(0, 0%, 0%, 0.13), 0 3px 3px hsla(0, 0%, 0%, 0.05);
+    -moz-transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+    -o-transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+    -webkit-transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+    transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+    background: whitesmoke;
+    height: 28px;
+    width: 28px;
+    top: 1px;
+    left: 0px;
+    border-radius: 60px;
+  }
+  .toggleWrapper input.mobileToggle:checked + label:before {
+    background: #2ecc71;
+    -moz-transition: width 0.2s cubic-bezier(0, 0, 0, 0.1);
+    -o-transition: width 0.2s cubic-bezier(0, 0, 0, 0.1);
+    -webkit-transition: width 0.2s cubic-bezier(0, 0, 0, 0.1);
+    transition: width 0.2s cubic-bezier(0, 0, 0, 0.1);
+  }
+  .toggleWrapper input.mobileToggle:checked + label:after {
+    left: 24px;
+  }
+
+/* loading */
+
+/* end loading */
