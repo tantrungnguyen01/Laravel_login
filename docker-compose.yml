@@ -1,0 +1,26 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_DATABASE: db_base
+      DB_USERNAME: root
+      DB_PASSWORD: 
+  db:
+    image: mysql:8.2
+    volumes:
+      - dbdata:/var/lib/mysql
+    environment:
+      MYSQL_USER: root
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: db_base
+volumes:
+  dbdata:
+

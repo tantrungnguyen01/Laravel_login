@@ -64,12 +64,12 @@
 
 <body class="bob">
 
-
+{{-- 
     <div class="loader">
         <div></div>
         <div></div>
         <div></div>
-    </div>
+    </div> --}}
 
     <div class="panda">
         <div class="ear"></div>
